@@ -401,6 +401,10 @@ margin: 20px 0 0 0;
  			padding: 0; 
 		 }
 
+		 .movielist li{
+		 	height: 360px;
+		 }
+
 		.postercolumn{
 			width: 130px;
 		}
