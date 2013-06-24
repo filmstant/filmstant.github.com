@@ -1,0 +1,500 @@
+/*
+* Created by Matthew Achariam (achariam.com)
+* A FortySix Production (46.io)
+* June 2013
+*/
+
+/* Header
+================================================== */
+
+.header{
+	width: 100%;
+	height: 85px;
+	background: rgb(13,20,30);
+	background: rgba(13,20,30, 0.5); 
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, .4);
+	position: fixed; z-index: 9999; top: 0px; bottom: auto; 
+	display: block;
+}
+
+.header h1{
+	padding: 15px 0 0 0;
+	font-weight: 300;
+	font-size: 2.9rem;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 1px rgba(7, 10, 14, .3);
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+.header h6{
+	padding: 3px 0 0 0;
+	font-weight: 400;
+	text-shadow: 2px 2px 1px rgba(7, 10, 14, .3);
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+#toTop {
+    padding: 19px 8px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 5px;
+    display: none;
+}
+
+#toTop span{
+	font-size: 6rem;
+	text-shadow: 2px 2px 1px rgba(7, 10, 14, .3);
+}
+
+#toTop:hover{
+	cursor: pointer;
+}
+
+.navigation{
+  	padding: 28px 8px;
+    position: fixed;
+    top: 0;
+    left: 5px;
+    z-index: 9999;
+}
+
+.navigation a{
+	text-decoration: none;
+	font-weight: 400;
+	background: rgb(42,75,133);
+	background: rgba(42,75,133, 0.1); 
+	padding: 8px 15px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+	font-size: 1.3rem;
+}
+
+.navigation a:hover{
+	background: rgb(42,75,133);
+}
+
+
+/* Main
+================================================== */
+
+ .container{ 
+ 	width: 730px;
+ 	height: 100%;
+ 	margin: 0 auto; 
+ 	padding: 0; 
+ }
+
+.films{
+	margin-top: 150px;
+}
+
+
+.movielist li{
+	background: rgb(13,20,30);
+	background: rgba(13,20,30, 0.4); 
+	box-shadow: 0 0 5px 3px rgba(0, 0, 0, .2);
+	margin: 0 0 80px 0;
+	height: 330px;
+}
+
+/* Poster side
+================================================== */
+
+.postercolumn{
+	width: 180px;
+	display: inline-block;
+}
+
+.postercolumn a{
+	background: #2a4b85;
+	width: 100%;
+	padding: 5px 0;
+	display: inline-block;
+	text-shadow: none;
+	text-decoration: none;
+	text-align: left;
+}
+
+.postercolumn a:hover{
+	background: #3498DB;
+}
+
+.postercolumn span{
+	float: left;
+	font-size: 5.0rem;
+	line-height: 0;
+	padding: 7px 15px 5px 18px;
+}
+
+.blueer a{
+	background: #1a2b49;
+}
+
+.blueer a:hover{
+	background: #2980B9;
+}
+
+.blueer span{
+	padding: 5px 18px 5px 22px;
+	line-height: 0;
+	font-size: 6.0rem;
+}
+
+.postercolumn img{
+	margin-bottom:-7px;
+}
+
+/* Info side
+================================================== */
+
+.infocolumn{
+	width: 550px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.infocolumn h2{
+	font-weight: 300;
+	margin: 20px 0 0 20px;
+}
+
+.titlebox{
+	height: 95px;
+	overflow: hidden;
+}
+
+.reviewbox{
+	background: #0d1922;
+	height: 240px;
+	width: 430px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.reviewbox p{
+	margin: 20px;
+	font-size: 2.0rem;
+	font-weight: 300;
+}
+
+.reviewbox h6{
+	text-align: left;
+	margin: 10px 20px 20px 20px;
+	font-weight: 600;
+}
+
+.audiencebox{
+	height: 120px;
+	width: 120px;
+	background: #2ecc71;
+}
+
+.audiencebox a{
+	text-decoration: none;
+}
+
+.audiencebox:hover{
+	background: #3cee84;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+
+.criticbox{
+	height: 120px;
+	width: 120px;
+	background: #2ecc71;
+}
+
+.criticbox a{
+	text-decoration: none;
+}
+
+.criticbox:hover{
+	background: #3cee84;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+
+.scores{
+	display: inline-block;
+	text-align: center;
+}
+
+.scores h3{
+	padding-top: 15px;
+	font-family: 'Open Sans Condensed';
+	font-weight: 300;
+	font-size: 5.2rem;
+}
+
+.scores p{
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+
+/* Footer
+================================================== */
+
+#footer{
+width: 100%;
+height: 300px;
+text-align: center;
+margin: 20px 0 0 0;
+}
+
+#footer p{
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin: 0 0 0 0;
+}
+
+#footer img{
+	display: block;
+	margin: 10px auto;
+}
+
+
+/* Loading Spinner
+================================================== */
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes spin {
+  from { -o-transform: rotate(0deg); }
+  to { -o-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Loading animation container */
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+}
+
+/* Spin track (outer circle) */
+.loading .track {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 2px;
+  top: 2px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Spinning circle (inner circle) */
+.loading .maskedCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  border: 3px solid white;
+}
+
+/* Spinning circle mask */
+.loading .mask {  
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+}
+
+/* Spinner */
+.loading .spinner {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 26px;
+  height: 26px;
+  -webkit-animation: spin 1s infinite linear;
+  -o-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}
+
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+
+	.header{
+		height: 60px;
+	}
+
+	.header h1{
+		padding: 10px 0 0 0;
+		font-size: 2.1rem;
+		letter-spacing: 2px;
+	}
+
+	.header h6{
+		padding: 2px 0 0 0;
+		text-align: center;
+		font-size: 1.1rem;
+	}
+
+	#toTop {
+    	padding: 10px 8px;
+	}
+
+	#toTop span{
+		font-size: 4rem;
+	}
+
+
+	.navigation{
+  		padding: 15px 5px;
+    	position: fixed;
+	}
+
+	.navigation a{
+		padding: 8px 15px;
+		font-size: 1.2rem;
+	}
+
+
+		 .container{ 
+ 			width: 530px;
+ 			margin: 0 auto; 
+ 			padding: 0; 
+		 }
+
+		.postercolumn{
+			width: 130px;
+		}
+
+		.postercolumn img{
+			width: 130px;
+			height: 190px;
+		}
+
+		.postercolumn a{
+			font-size: 1.4rem;
+			padding: 3px 0;
+		}
+
+		.postercolumn span{
+			font-size: 4.0rem;
+			padding: 7px 10px 5px 10px;
+		}
+
+		.blueer span{
+			padding: 7px 16px 5px 12px;
+			font-size: 4.8rem;
+		}
+
+
+		.infocolumn{
+			width: 400px;
+		}	
+
+		.infocolumn h2{
+			font-size: 3.4rem;
+			margin: 15px 0 0 15px;
+		}
+
+		.titlebox{
+			height: 69px;
+		}
+
+		
+		.reviewbox{
+			height: 187px;
+			width: 307px;
+		}
+
+		.reviewbox p{
+			margin: 15px;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 1.3;
+		}
+
+		.reviewbox h6{
+			text-align: left;
+			margin: 5px 10px 10px 15px;
+			font-weight: 600;
+			font-size: 1.4rem;
+		}
+
+		.audiencebox{
+			height: 94px;
+			width: 93px;
+		}
+
+		.criticbox{
+			height: 93px;
+			width: 93px;
+		}
+
+
+		.scores h3{
+			padding-top: 10px;
+			font-size: 3.8rem;
+		}
+
+		.scores p{
+			letter-spacing: 1px;
+			font-size: 1rem;
+		}	
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+
+
+	}
+
+
+
+

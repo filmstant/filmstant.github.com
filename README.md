@@ -1,4 +1,4 @@
-filmstant.github.com
-====================
+filmstant
+=========
 
 Filmstant beautifully displays movies out now.
