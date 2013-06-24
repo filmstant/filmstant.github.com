@@ -403,8 +403,9 @@ margin: 20px 0 0 0;
 
 		 .movielist li{
 			margin: 0 0 60px 0;
-			height: 260px;
+			height: 255px;
 			width: 530px;
+			overflow: hidden;
 		}
 
 		.postercolumn{
