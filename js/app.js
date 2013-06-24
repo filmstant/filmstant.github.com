@@ -20,7 +20,7 @@ if($("#homeflag").length > 0) {
 }
 
 if($("#upcomingflag").length > 0) {
-    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?limit=6&country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
+    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
 }
 
 
