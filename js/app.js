@@ -64,7 +64,7 @@ $('.loading').hide();
  var style;
  var noSpaceMovTitle;
 
- var noReview="No Reviews Yet...";
+ var noReview="No Review Consensus Yet...";
  var noScore="N/A";
 
  $.each(movies, function(index, movie) {
