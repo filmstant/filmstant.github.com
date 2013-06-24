@@ -1,4 +1,4 @@
 filmstant
 =========
 
-Filmstant beautifully displays movies out now.
+[Filmstant](http://filmstant.github.io/) beautifully displays movies out now.
