@@ -406,7 +406,6 @@ margin: 20px 0 0 0;
 			margin: 0 0 60px 0;
 			height: 255px;
 			width: 530px;
-			overflow: hidden;
 		}
 
 		.postercolumn{
@@ -420,7 +419,8 @@ margin: 20px 0 0 0;
 
 		.postercolumn a{
 			font-size: 1.4rem;
-			padding: 3px 0 7px 0;
+			line-height: 2.5rem;
+			padding: 3px 0 5px 0;
 		}
 
 		.postercolumn span{
