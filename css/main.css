@@ -113,11 +113,12 @@
 .postercolumn a{
 	background: #2a4b85;
 	width: 100%;
-	padding: 5px 0;
+	padding: 5px 0 9px 0;
 	display: inline-block;
 	text-shadow: none;
 	text-decoration: none;
 	text-align: left;
+	line-height: 2.3rem;
 }
 
 .postercolumn a:hover{
@@ -419,7 +420,7 @@ margin: 20px 0 0 0;
 
 		.postercolumn a{
 			font-size: 1.4rem;
-			padding: 3px 0;
+			padding: 3px 0 7px 0;
 		}
 
 		.postercolumn span{
