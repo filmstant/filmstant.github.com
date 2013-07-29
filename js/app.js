@@ -85,6 +85,7 @@ $('.loading').hide();
 	}
 
   noSpaceMovTitle = movie.title.replace(/\s+/g, '');
+  noSpaceMovTitle = noSpaceMovTitle.replace(/\./g,' ');
 
   if (movie.critics_consensus === undefined){
     movie.critics_consensus = noReview;
