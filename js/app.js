@@ -66,6 +66,8 @@ $('.loading').hide();
 
  var noReview="No Review Consensus Yet...";
  var noScore="N/A";
+ var synopsis;
+
 
  $.each(movies, function(index, movie) {
 
@@ -84,12 +86,22 @@ $('.loading').hide();
 		movTitle = movie.title;
 	}
 
+if (movie.synopsis.length > 200){
+		var length = 199;
+		synopsis = movie.synopsis.substring(0,length);
+		synopsis = synopsis+'...';
+	}
+
+	else {
+		synopsis = movie.synopsis;
+	}
+
   noSpaceMovTitle = movie.title.replace(/\./g,' ');
   noSpaceMovTitle = noSpaceMovTitle.replace(/\s+/g, '');
 
 
-  if (movie.critics_consensus === undefined){
-    movie.critics_consensus = noReview;
+  if (movie.synopsis === undefined){
+    movie.synopsis = noReview;
   }
 
   if (movie.ratings.critics_score == "-1"){
@@ -104,8 +116,12 @@ $('.loading').hide();
 
 
 
-   $('.movielist').append('<li><div class="postercolumn"><img src="' + movie.posters.detailed + '" width="180" height="261"/><div class="blueer"><a href="http://www.youtube.com/embed?listType=search&list=' + movie.title + ' trailer" target="_blank"><span class="icon" aria-hidden="true" data-icon="&#9654;"></span>   trailer</a></div><a href="http://www.google.com/movies?hl=en&q=' + movie.title + '" target="_blank"><span class="icon" aria-hidden="true" data-icon="&#128340;"></span>   showtimes</a></div><div class="infocolumn"><div class="titlebox"><h2>' + movTitle + '</h2></div><div class="reviewbox"><p>' + movie.critics_consensus + '</p><h6> ' + movie.release_dates.theater + ' &#183; ' + movie.runtime + ' min &#183; Rated ' + movie.mpaa_rating + '</h6></div><div class="scores"><div class="'+ noSpaceMovTitle +'Critic criticbox"><a href="' + movie.links.alternate + '#contentReviews"><h3>' + movie.ratings.critics_score + '</h3><p>CRITICS</p></a></div><div class="'+ noSpaceMovTitle +'Audience audiencebox"><a href="' + movie.links.alternate + '#audience_reviews"><h3>' + movie.ratings.audience_score + '</h3><p>AUDIENCE</p></a></div></div></div></li>');
+   $('.movielist').append('<li><div class="postercolumn"><img src="' + movie.posters.profile + '" width="180" height="261"/><div class="blueer"><a href="http://www.youtube.com/embed?listType=search&list=' + movie.title + ' trailer" target="_blank"><span class="icon" aria-hidden="true" data-icon="&#9654;"></span>   trailer</a></div><a href="http://www.google.com/movies?hl=en&q=' + movie.title + '" target="_blank"><span class="icon" aria-hidden="true" data-icon="&#128340;"></span>   showtimes</a></div><div class="infocolumn"><div class="titlebox"><h2>' + movTitle + '</h2></div><div class="reviewbox"><p>' + synopsis + '</p><h6> ' + movie.release_dates.theater + ' &#183; ' + movie.runtime + ' min &#183; Rated ' + movie.mpaa_rating + '</h6></div><div class="scores"><div class="'+ noSpaceMovTitle +'Critic criticbox"><a href="' + movie.links.alternate + '#contentReviews"><h3>' + movie.ratings.critics_score + '</h3><p>CRITICS</p></a></div><div class="'+ noSpaceMovTitle +'Audience audiencebox"><a href="' + movie.links.alternate + '#audience_reviews"><h3>' + movie.ratings.audience_score + '</h3><p>AUDIENCE</p></a></div></div></div></li>');
 
+   	$('img').each(function () {
+    var src = $(this).attr('src');
+    $(this).attr('src', src.replace(/_tmb\.(png|jpg|jpeg|gif)$/, '_det.$1'));
+});
 
 	if (movie.ratings.audience_score < 60){		
 		style = $('<style type="text/css">.'+ noSpaceMovTitle +'Audience{ background: #e74c3c; } .'+ noSpaceMovTitle +'Audience:hover{ background: #fe5353; }</style>');
@@ -116,7 +132,7 @@ $('.loading').hide();
 				style = $('<style type="text/css">.'+ noSpaceMovTitle +'Critic{ background: #e74c3c; } .'+ noSpaceMovTitle +'Critic:hover{ background: #fe5353; }</style>');
 			$('html > head').append(style);
 	}
-
+	
 
  });
 
