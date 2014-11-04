@@ -86,10 +86,10 @@ $('.loading').hide();
 		movTitle = movie.title;
 	}
 
-if (movie.synopsis.length > 200){
-		var length = 199;
+if (movie.synopsis.length > 220){
+		var length = 219;
 		synopsis = movie.synopsis.substring(0,length);
-		synopsis = synopsis+'...';
+		synopsis = synopsis+ '<a href=" ' + movie.links.alternate + '" style="text-decoration: none">...</a>';
 	}
 
 	else {
