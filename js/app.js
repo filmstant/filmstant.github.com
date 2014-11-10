@@ -16,11 +16,11 @@ $(document).ready(function() {
 var apiurl;
 
 if($("#homeflag").length > 0) {
-    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
+    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
 }
 
 if($("#upcomingflag").length > 0) {
-    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/opening.json?country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
+    apiurl = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/upcoming.json?country=us&apikey=qsrc3nwb5xsuvwbnv6xazzc3";
 }
 
 
