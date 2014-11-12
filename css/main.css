@@ -61,6 +61,32 @@
     z-index: 9999;
 }
 
+.rightLink {
+	padding-top: 28px;
+	position: fixed;
+	top: 0;
+	right: 5px;
+	z-index: 9999;
+}
+
+.rightLink a{
+	text-decoration: none;
+	font-weight: 400;
+	background: rgb(42,75,133);
+	background: rgba(42,75,133, 0.1); 
+	padding: 8px 15px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+	font-size: 1.3rem;
+	
+}
+
+.rightLink a:hover {
+	background: rgb(42,75,133);
+}
+
 .navigation a{
 	text-decoration: none;
 	font-weight: 400;
